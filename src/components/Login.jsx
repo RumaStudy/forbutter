@@ -16,7 +16,7 @@ const Login = (props) => {
         <input type="text" name="login" id="userId" />
         <input type="text" name="login" id="pw" />
         <input type="submit" value="Sign-In" />
-        <button>Sign-up</button>
+        <button onClick={() => {}}>Sign-up</button>
       </form>
     </section>
   );

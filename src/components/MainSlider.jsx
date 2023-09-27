@@ -18,11 +18,22 @@ const SliderWrap = styled.ul`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -80;
   & > li {
+    z-index: -79;
     width: 25%;
     height: 100%;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
     & > img {
+      z-index: -78;
       width: 100%;
       height: 100%;
       object-fit: cover;

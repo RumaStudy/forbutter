@@ -76,6 +76,13 @@
   padding-top: 150px;
   margin: 0 auto;
 }
+.engSlogun {
+}
+.engSlogun > h1 {
+  font-size: 100px;
+  font-weight: 100;
+}
+.koSlogun
 /* GNB */
 #GNB {
 }

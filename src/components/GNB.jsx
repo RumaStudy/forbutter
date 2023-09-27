@@ -16,9 +16,8 @@ const GNB = () => {
     <nav id="GNB">
       <ul>
         {gnbItems.map((things, idx) => (
-          <div className={idx === gnbActive ? "active" : ""}>
+          <div key={things} className={idx === gnbActive ? "active" : ""}>
             <li
-              key={things}
               className={`GNB_item ${idx === gnbActive ? "active" : ""}`}
               onClick={() => {
                 itemClick(idx);

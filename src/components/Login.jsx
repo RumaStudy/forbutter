@@ -6,7 +6,7 @@ const Login = (props) => {
     <section className="loginBox">
       <img
         src={xbtn}
-        alt=""
+        alt="close_button"
         onClick={() => {
           props.setLoginState(false);
         }}

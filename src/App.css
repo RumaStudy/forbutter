@@ -71,6 +71,40 @@
   height: 100vh;
   background-color: #232730;
 }
+.inner {
+  width: 1550px;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+/* GNB */
+#GNB {
+}
+#GNB > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#GNB > ul > div {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid transparent;
+  transition: ease 550ms;
+}
+#GNB > ul > div > .GNB_item {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+  color: #6f737c;
+  transition: 550ms;
+}
+#GNB > ul > div > .GNB_item:hover {
+  color: #e1e1e1;
+}
+#GNB > ul > div.active {
+  border-bottom: 1px solid #e1e1e1;
+}
+#GNB > ul > div > .GNB_item.active {
+  color: #e1e1e1;
+}
 
 /* Login */
 .loginBox {

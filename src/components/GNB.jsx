@@ -11,7 +11,7 @@ const GNB = () => {
     <nav id="GNB">
       <ul>
         {gnbItems.map((things) => (
-          <li>{things}</li>
+          <li key={things}>{things}</li>
         ))}
       </ul>
     </nav>

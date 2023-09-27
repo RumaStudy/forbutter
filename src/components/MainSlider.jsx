@@ -13,7 +13,6 @@ const bgArr = [mVisual01, mVisual02, mVisual03, mVisual04];
 
 const SliderWrap = styled.ul`
   display: flex;
-  justify-content: flex-start;
   width: 400%;
   height: 100vh;
   position: absolute;
@@ -33,17 +32,38 @@ const SliderWrap = styled.ul`
 `;
 
 const MainSlider = () => {
-  const [sliderlocate, setSliderLocate] = useState(0); // Slider 위치값
+  /* Slide Variables */
+  const slideAmountTotal = -75;
+  const [sliderLocate, setSliderLocate] = useState(0); // Slider 위치값
+  const slideRef = useRef();
+
+  /* Slide Movement Function */
+  const slideMovement = (state) => {
+    slideRef.current.style.transition = "0.5s";
+    slideRef.current.style.transform = `translateX(${state}%)`;
+  };
+
+  /* useEffect() */
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (sliderLocate <= slideAmountTotal) {
+        setSliderLocate(0);
+      } else {
+        setSliderLocate((prev) => prev - 25);
+      }
+      return clearInterval(timer);
+    }, 3000);
+    slideMovement(sliderLocate);
+  }, [sliderLocate]);
+
   return (
-    <article className="mainSlider">
-      <SliderWrap>
-        {bgArr.map((items) => (
-          <li key={items}>
-            <img src={items} alt="" />
-          </li>
-        ))}
-      </SliderWrap>
-    </article>
+    <SliderWrap ref={slideRef}>
+      {bgArr.map((items) => (
+        <li key={items}>
+          <img src={items} alt="" />
+        </li>
+      ))}
+    </SliderWrap>
   );
 };
 

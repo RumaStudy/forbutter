@@ -3,7 +3,7 @@ import GNB from "./GNB";
 
 const CompanyInfo = () => {
   return (
-    <main>
+    <main className="CompanyInfo">
       <div className="inner">
         <GNB />
         <div className="flexBox">

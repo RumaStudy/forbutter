@@ -1,5 +1,13 @@
-.mainSlider {
+/* Main Banner Components */
+.MainBanner {
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+/* Company Info Components */
+.CompanyInfo {
+  width: 100%;
+  height: 100vh;
+  background-color: #232730;
 }

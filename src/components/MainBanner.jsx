@@ -2,9 +2,6 @@ import React from "react";
 import MainSlider from "./MainSlider";
 
 /* Library */
-import { styled } from "styled-components";
-
-/* Styled-Components */
 
 const MainBanner = () => {
   return (
@@ -14,7 +11,7 @@ const MainBanner = () => {
       <header>
         <button>RESERVATION</button>
         <button>BUTTER</button>
-        <button></button>
+        <button>dont't know</button>
       </header>
     </section>
   );

@@ -30,7 +30,7 @@ const SliderWrap = styled.ul`
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.15);
     }
     & > img {
       z-index: -78;
@@ -68,13 +68,26 @@ const MainSlider = () => {
   }, [sliderLocate]);
 
   return (
-    <SliderWrap ref={slideRef}>
-      {bgArr.map((items) => (
-        <li key={items}>
-          <img src={items} alt="" />
-        </li>
-      ))}
-    </SliderWrap>
+    <section>
+      <SliderWrap ref={slideRef}>
+        {bgArr.map((items) => (
+          <li key={items}>
+            <img src={items} alt="" />
+          </li>
+        ))}
+      </SliderWrap>
+      <div className="sliderBullet">
+        {bgArr.map((item, idx) => (
+          <div
+            key={item}
+            className={`bullet ${idx * -25 === sliderLocate ? "active" : ""}`}
+            onClick={() => {
+              setSliderLocate(idx);
+            }}
+          ></div>
+        ))}
+      </div>
+    </section>
   );
 };
 

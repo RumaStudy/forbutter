@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MainSlider from "./MainSlider";
 
 /* img */
@@ -6,13 +6,20 @@ import hbg from "./img/hbgMenu.svg";
 
 /* Library */
 
-const MainBanner = () => {
+const MainBanner = (props) => {
   return (
     <section className="MainBanner">
       {/* ImgSlider */}
       <MainSlider />
       <header className="mainVisual_header">
-        <button className="mainVisual_header_item">RESERVATION</button>
+        <button
+          className="mainVisual_header_item"
+          onClick={() => {
+            props.setLoginState((prev) => !prev);
+          }}
+        >
+          RESERVATION
+        </button>
         <button className="mainVisual_header_item">BUTTER</button>
         <button className="mainVisual_header_item">
           <img src={hbg} alt="" />

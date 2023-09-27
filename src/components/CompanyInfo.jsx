@@ -1,5 +1,6 @@
 import React from "react";
 import GNB from "./GNB";
+import carPics from "./img/carPics.png";
 
 const CompanyInfo = () => {
   return (
@@ -18,7 +19,9 @@ const CompanyInfo = () => {
             </span>
             <button>VIEW MORE</button>
           </div>
-          <div className="flexRight"></div>
+          <div className="flexRight">
+            <img src={carPics} alt="Brand_Img" />
+          </div>
         </div>
       </div>
     </main>

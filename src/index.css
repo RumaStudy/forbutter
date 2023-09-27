@@ -21,6 +21,18 @@ code {
   font-style: normal;
   /* font-family: "Pretendard-Regular", sans-serif; */
 }
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url();
+  font-style: normal;
+  /* font-family: "Pretendard-Light", sans-serif; */
+}
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url();
+  font-style: normal;
+  /* font-family: "Pretendard-Bold", sans-serif; */
+}
 
 /* CSS RESET */
 html {

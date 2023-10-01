@@ -169,6 +169,7 @@
   cursor: pointer;
 }
 .loginBox > h2 {
+  width: fit-content;
   margin: 19px auto 2rem;
   font-size: 40px;
   font-weight: bold;
@@ -179,9 +180,39 @@
   width: 460px;
   height: 70px;
   padding: 0 1rem;
-  margin: auto;
+  border-radius: 1rem;
+  margin: auto auto 1rem;
   color: black;
   font-size: 24px;
   line-height: 70px;
+}
+.loginBox > form > .formBtnWrap {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+.loginBox > form > .formBtnWrap > button,
+.loginBox > form > .formBtnWrap > input[type="submit"] {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+.loginBox > form > .formBtnWrap > input[type="submit"] {
+  color: #fff;
+}
+.loginBox > form > .formBtnWrap > span {
+  display: inline-block;
+  width: 1px;
+  height: 28px;
+  border-left: 1px solid #fff;
+  margin: 0 28px;
+}
+.loginBox > form > .formBtnWrap > button {
+  color: #999;
 }
 /* Sign-In */

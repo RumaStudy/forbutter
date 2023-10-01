@@ -15,8 +15,18 @@ const Login = (props) => {
       <form action="post">
         <input type="text" name="login" id="userId" />
         <input type="text" name="login" id="pw" />
-        <input type="submit" value="Sign-In" />
-        <button onClick={() => {}}>Sign-up</button>
+        <div className="formBtnWrap">
+          <input type="submit" value="Sign in" />
+          <span></span>
+          <button
+            className=""
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
+            Sign up
+          </button>
+        </div>
       </form>
     </section>
   );

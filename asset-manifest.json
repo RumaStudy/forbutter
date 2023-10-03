@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/forbutter/static/css/main.67419188.css",
-    "main.js": "/forbutter/static/js/main.3f55b692.js",
+    "main.css": "/forbutter/static/css/main.c835fba7.css",
+    "main.js": "/forbutter/static/js/main.256c049e.js",
     "static/js/787.9e438450.chunk.js": "/forbutter/static/js/787.9e438450.chunk.js",
     "static/media/mainVisual02.png": "/forbutter/static/media/mainVisual02.94f8fd133f479cb1f9d7.png",
     "static/media/mainVisual03.png": "/forbutter/static/media/mainVisual03.c902e573e19e480bf372.png",
     "static/media/mainVisual01.png": "/forbutter/static/media/mainVisual01.95ec13ea2cb3d66cf647.png",
     "static/media/mainVisual04.png": "/forbutter/static/media/mainVisual04.31968f1a044092708f27.png",
     "static/media/carPics.png": "/forbutter/static/media/carPics.7de4d9c8fd81b2a9e574.png",
+    "static/media/VictoriaRegular-gx7OR.otf": "/forbutter/static/media/VictoriaRegular-gx7OR.3cad5bd1d926538e33c3.otf",
     "index.html": "/forbutter/index.html",
     "static/media/hbgMenu.svg": "/forbutter/static/media/hbgMenu.b91cb973ff9a2a990c31a29a9b3f0526.svg",
     "static/media/xbtn.svg": "/forbutter/static/media/xbtn.1f690f42fe84e50446a054d8db867314.svg",
-    "main.67419188.css.map": "/forbutter/static/css/main.67419188.css.map",
-    "main.3f55b692.js.map": "/forbutter/static/js/main.3f55b692.js.map",
+    "main.c835fba7.css.map": "/forbutter/static/css/main.c835fba7.css.map",
+    "main.256c049e.js.map": "/forbutter/static/js/main.256c049e.js.map",
     "787.9e438450.chunk.js.map": "/forbutter/static/js/787.9e438450.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67419188.css",
-    "static/js/main.3f55b692.js"
+    "static/css/main.c835fba7.css",
+    "static/js/main.256c049e.js"
   ]
 }

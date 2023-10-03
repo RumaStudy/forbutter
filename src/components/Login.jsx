@@ -30,17 +30,14 @@ const Login = (props) => {
 
   /* Login Process */
   const [loginState, setLoginState] = useState(false);
-  const signin = (e) => {
+  const signup = (e) => {
     e.preventDefault();
     /* ID, PW 최소요건 검사 */
     if (inputId.length === 0 || inputPW === 0) {
       alert("id와 pw는 반드시 입력해야합니다.");
     } else {
       /* i) 로그인 진행 후 응답 폼의 액세스 토큰을 헤더에 추가하여 'get-info' api 호출 */
-      axios.get(`${API_URL}/api/v1/assignment/sign-in`, {
-        id: inputId,
-        pw: inputPW,
-      });
+      axios.get(API_URL);
       setLoginState(true);
     }
   };
@@ -73,15 +70,19 @@ const Login = (props) => {
         onChange={PWChecker}
       />
       <div className="formBtnWrap">
-        <button className="signIn" onClick={signin}>
+        <button
+          className="signIn"
+          onClick={() => {
+            props.setLoginState(false);
+            props.setSignUpState(true);
+          }}
+        >
           Sign in
         </button>
         <span></span>
         <button
           className={`signUp ${loginState ? "active" : ""}`}
-          onClick={(e) => {
-            e.preventDefault();
-          }}
+          onClick={signup}
         >
           Sign up
         </button>

@@ -67,7 +67,8 @@ axios({
   },
 });
 
-/* Sign-in */ //  Get-Info API 를 요쳥으로 받아와서 응답폼으로 실행
+/* Sign-in */
+//  Get-Info API 를 요쳥으로 받아와서 응답폼으로 실행
 axios({
   method: "post",
   url: `${API_URL}/api/v1/assignment/sign-in`,

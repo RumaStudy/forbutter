@@ -218,3 +218,56 @@
   color: #999;
 }
 /* Sign-In */
+.signInSection {
+  width: 730px;
+  height: 700px;
+  padding: 1rem 3rem 2.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: #2d2d2d;
+}
+.signInSection > h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  width: 100%;
+}
+.SignUpWrap {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.3fr auto;
+  grid-template-rows: repeat(6, auto);
+}
+.SignUpWrap > title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.SignUpWrap > input {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #000;
+}
+.SignInConfirm {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 70px auto auto;
+  text-align: center;
+  line-height: 50px;
+  background-color: #74778c;
+  font-size: 24px;
+  font-weight: 700;
+}
+.closeBtn {
+  float: right;
+  margin: 1rem -1rem;
+  cursor: pointer;
+}
